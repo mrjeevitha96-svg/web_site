@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact me for web development projects, collaborations and opportunities.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <title>Contact | Your Name</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<a href="#main-content" class="skip-link">
+    Skip to main content
+</a>
+
+
+<header class="site-header">
+
+    <div class="container nav-container">
+
+        <a href="index.html"
+           class="logo"
+           aria-label="Go to homepage">
+            JMR<span>portfo</span>
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation">
+            ☰
+        </button>
+
+
+        <nav id="primary-navigation"
+             class="main-nav"
+             aria-label="Primary navigation">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                       aria-current="page">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main id="main-content">
+
+    <section class="page-hero"
+             aria-labelledby="contact-title">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                CONTACT
+            </p>
+
+            <h1 id="contact-title">
+                Let's start a
+                <span>conversation.</span>
+            </h1>
+
+            <p>
+                Have a project, opportunity or idea?
+                Feel free to reach out.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container contact-grid">
+
+
+            <aside class="contact-info"
+                   aria-labelledby="contact-info-title">
+
+                <p class="eyebrow">
+                    GET IN TOUCH
+                </p>
+
+                <h2 id="contact-info-title">
+                    I'd love to hear from you.
+                </h2>
+
+                <p>
+                    Whether you want to discuss a project,
+                    collaboration or opportunity, send me
+                    a message through the form.
+                </p>
+
+
+                <address>
+
+                    <p>
+                        <strong>Email</strong><br>
+
+                        <a href="mrjeevitha96@gmail.com">
+                            mrjeevitha96@gmail.com
+                        </a>
+                    </p>
+
+
+                    <p>
+                        <strong>Location</strong><br>
+                        Mangaluru,karnataka,India
+                    </p>
+
+                </address>
+
+            </aside>
+
+
+            <!-- Accessible form -->
+
+            <section class="form-container"
+                     aria-labelledby="form-title">
+
+                <h2 id="form-title">
+                    Send a Message
+                </h2>
+
+                <p id="form-description">
+                    All fields marked with
+                    <span aria-hidden="true">*</span>
+                    are required.
+                </p>
+
+
+                <form id="contact-form"
+                      novalidate>
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            required
+                            minlength="2"
+                            aria-required="true"
+                            aria-describedby="name-help">
+
+                        <small id="name-help">
+                            Enter your full name.
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                            aria-required="true"
+                            aria-describedby="email-help">
+
+                        <small id="email-help">
+                            Enter a valid email address.
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                            minlength="3"
+                            aria-required="true">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                            minlength="10"
+                            aria-required="true"
+                            aria-describedby="message-help"></textarea>
+
+                        <small id="message-help">
+                            Write at least 10 characters.
+                        </small>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary form-submit">
+
+                        Send Message
+
+                    </button>
+
+
+                    <p
+                        id="form-status"
+                        class="form-status"
+                        role="status"
+                        aria-live="polite">
+                    </p>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-content">
+
+        <div>
+
+            <p class="footer-logo">
+                JMR<span>portfo</span>
+            </p>
+
+            <p>
+                Semantic. Accessible. Responsive.
+            </p>
+
+        </div>
+
+
+        <nav aria-label="Footer navigation">
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+
+    <div class="container copyright">
+
+        <p>
+            &copy; <span id="year"></span>
+            Your Name. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
